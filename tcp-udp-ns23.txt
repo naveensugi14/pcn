@@ -1,0 +1,18 @@
+./ns3 run "scratch/tcp_udp_traffic --bottleneckBw=2Mbps"
+./ns3 run "scratch/tcp_udp_traffic --bottleneckBw=5Mbps"
+./ns3 run "scratch/tcp_udp_traffic --bottleneckBw=10Mbps"
+
+./ns3 run "scratch/tcp_udp_traffic --udpRate=500Kbps"
+./ns3 run "scratch/tcp_udp_traffic --udpRate=1Mbps"
+./ns3 run "scratch/tcp_udp_traffic --udpRate=2Mbps"
+./ns3 run "scratch/tcp_udp_traffic --udpRate=5Mbps"
+
+./ns3 run "scratch/tcp_udp_traffic --queueSize=20"
+./ns3 run "scratch/tcp_udp_traffic --queueSize=50"
+./ns3 run "scratch/tcp_udp_traffic --queueSize=100"
+
+
+./ns3 run "scratch/tcp_udp_traffic --bottleneckDelay=5ms"
+./ns3 run "scratch/tcp_udp_traffic --bottleneckDelay=10ms"
+./ns3 run "scratch/tcp_udp_traffic --bottleneckDelay=20ms"
+./ns3 run "scratch/tcp_udp_traffic --bottleneckDelay=50ms"

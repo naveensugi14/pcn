@@ -1,0 +1,8 @@
+# 1. Low Mobility (Pedestrian / Walking)
+./ns3 run "scratch/heterogeneous_campus --speed=1.0"
+
+# 2. Medium Mobility (Running / Cycling)
+./ns3 run "scratch/heterogeneous_campus --speed=5.0"
+
+# 3. High Mobility (Campus Shuttle / Fast Vehicle)
+./ns3 run "scratch/heterogeneous_campus --speed=10.0"

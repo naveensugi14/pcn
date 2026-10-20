@@ -1,0 +1,14 @@
+# 1. Normal Condition
+./ns3 run "scratch/routing_eval --protocol=OSPF --condition=normal"
+./ns3 run "scratch/routing_eval --protocol=RIP  --condition=normal"
+./ns3 run "scratch/routing_eval --protocol=AODV --condition=normal"
+
+# 2. Congested Condition
+./ns3 run "scratch/routing_eval --protocol=OSPF --condition=congested"
+./ns3 run "scratch/routing_eval --protocol=RIP  --condition=congested"
+./ns3 run "scratch/routing_eval --protocol=AODV --condition=congested"
+
+# 3. Link-Failure Condition
+./ns3 run "scratch/routing_eval --protocol=OSPF --condition=failure"
+./ns3 run "scratch/routing_eval --protocol=RIP  --condition=failure"
+./ns3 run "scratch/routing_eval --protocol=AODV --condition=failure"
